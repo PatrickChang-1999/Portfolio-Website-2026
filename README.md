@@ -38,7 +38,7 @@ The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixel
 
 ## Update your résumé
 
-Replace `dist/resume.docx` with the final document, keeping its filename. The existing navigation and download links will continue to work. The currently imported document is the existing draft and should be replaced before the public website launch. To switch to PDF, update every résumé link together.
+Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF still needs to be supplied before these downloads can work. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
 
 ## Hosting
 
