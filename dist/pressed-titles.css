@@ -1,0 +1,17 @@
+/* 0205 dark pressed ink: original charcoal, tactile grain and recessed edges. */
+.pressed-title-defs{position:absolute;overflow:hidden;pointer-events:none}
+.design-0205.pressed-titles .hero h1,
+.design-0205.pressed-titles .page-intro h1{
+  color:#37332d;
+  /* Keep SourceAlpha limited to the glyphs; the SVG supplies the edge finish. */
+  text-shadow:none;
+  filter:url(#pressed-title);
+}
+@media(prefers-contrast:more),(forced-colors:active){
+  .design-0205.pressed-titles .hero h1,
+  .design-0205.pressed-titles .page-intro h1{filter:none;text-shadow:none}
+}
+@media print{
+  .design-0205.pressed-titles .hero h1,
+  .design-0205.pressed-titles .page-intro h1{filter:none;text-shadow:none;color:#171511}
+}

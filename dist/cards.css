@@ -1,0 +1,58 @@
+/* Experience-inspired finishes for existing cards; page structures stay intact. */
+.home-card,
+#work .work-item,
+.workflow-steps>li,
+.timeline-card{
+  border-color:#cbc3b5;
+  border-radius:16px;
+  background-color:#fcfaf5;
+  box-shadow:0 5px 18px rgba(56,46,32,.055);
+}
+
+/* Retain the homepage card layout, with plain typography and a softer surface. */
+.home-card h3,.home-card .number{text-shadow:none;color:#2c3029}
+.home-card .company-profile{border-color:#d5cdbc}
+.home-card:hover{box-shadow:0 8px 22px rgba(56,46,32,.09)}
+
+/* Preserve each project's existing copy/tools split. */
+#work .work-tool-panel{background-color:#e9e3d7;border-color:#d5cdbc}
+#work .tool-panel-heading,#work .work-copy .result,#work .art-bottom{border-color:#d5cdbc}
+.motion-enabled #work .work-item:focus-within{box-shadow:0 8px 22px rgba(56,46,32,.09)}
+@media(hover:hover) and (pointer:fine){
+  .motion-enabled #work .work-item:hover{box-shadow:0 8px 22px rgba(56,46,32,.09)}
+}
+
+/* Keep the same four individual workflow cards and their connecting arrows. */
+.workflow-steps>li{background-color:#e9e3d7}
+.workflow-icon{background:#fcfaf5;color:#69745b;box-shadow:inset 0 0 0 1px #d5cdbc}
+.workflow-copy h3{color:#2c3029}
+
+/* Existing alternating timeline cards receive a quiet cream surface. */
+.timeline-card{
+  border:1px solid #cbc3b5;
+  padding:22px 24px 42px;
+}
+.timeline-card h2{color:#2c3029}
+.timeline-date{color:#666359}
+
+/* Decorative waves sit in the background, leaving content and geometry intact.
+   A background image also preserves the workflow arrows outside their cards. */
+.home-card,
+#work .work-tool-panel,
+.workflow-steps>li,
+.timeline-card{
+  background-image:url("assets/card-wave.svg");
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:100% 140px;
+  background-clip:padding-box;
+}
+#work .work-tool-panel{background-size:100% 160px}
+.workflow-steps>li{background-size:100% 64px}
+.timeline-card{background-size:100% 100px}
+@media(max-width:750px){
+  .timeline-item.left .timeline-card,.timeline-item.right .timeline-card{padding:20px 22px 24px}
+}
+@media(max-width:520px){
+  .home-card,#work .work-item,.workflow-steps>li,.timeline-card{border-radius:12px}
+}

@@ -1,0 +1,6 @@
+/* Shared PNG tool icons across role rows, skills, and project panels. */
+.role-tools img,.cap-tool-list img,.work-tool-grid img,.tool-list img{display:block;object-fit:contain;object-position:center;mix-blend-mode:multiply;flex-shrink:0}
+.role-tools img,.cap-tool-list img{width:28px;height:28px;flex-basis:28px}
+.work-tool-grid img,.tool-list img{width:52px;height:52px;flex-basis:52px}
+.role-tools,.cap-tool-list{gap:14px 18px;align-items:center}
+.role-tools li,.cap-tool-list li{display:flex;align-items:center;gap:8px;min-height:28px}

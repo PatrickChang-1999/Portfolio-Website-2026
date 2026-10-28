@@ -1,0 +1,12 @@
+# Local caches and editor output
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+*.tar.gz
+*.zip

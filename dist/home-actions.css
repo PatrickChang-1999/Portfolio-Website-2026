@@ -1,0 +1,37 @@
+/* Home-only recessed actions: dark ink and ivory, pressed into the card. */
+.design-0205 .hero-actions.home-actions{gap:16px;width:100%}
+.design-0205 .home-actions a.hero-button{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;min-width:248px;max-width:100%;padding:13px 22px;
+  border:1px solid #bcb3a3;border-radius:8px;
+  background-color:#f3eee4;background-image:var(--0205-grain);
+  background-size:180px 180px;color:#37332d;
+  font-size:13px;line-height:1.5;font-weight:700;letter-spacing:.015em;
+  text-decoration:none;
+  box-shadow:inset 2px 3px 5px #51443230,inset -1px -1px 1px #fffdf6;
+  transition:background-color 180ms ease,box-shadow 180ms ease,border-color 180ms ease;
+}
+.design-0205 .home-actions a.hero-button-primary{
+  background-color:#37332d;color:#fffaf0;border-color:#524b40;
+  box-shadow:inset 2px 3px 5px #100d09b3,inset -1px -1px 1px #fff9e533;
+}
+.design-0205 .home-actions a.hero-button:hover,
+.design-0205 .home-actions a.hero-button:focus-visible{
+  text-decoration:none;background-color:#ebe4d7;border-color:#8e8371;
+  box-shadow:inset 2px 4px 7px #51443240,inset -1px -1px 1px #fffdf6;
+}
+.design-0205 .home-actions a.hero-button-primary:hover,
+.design-0205 .home-actions a.hero-button-primary:focus-visible{
+  background-color:#2e2a25;border-color:#494136;
+  box-shadow:inset 2px 4px 7px #100d09cc,inset -1px -1px 1px #fff9e533;
+}
+.design-0205 .home-actions a.hero-button:active{box-shadow:inset 2px 5px 8px #100d0966}
+@media(max-width:560px){
+  .design-0205 .hero-actions.home-actions{gap:12px}
+  .design-0205 .home-actions a.hero-button{width:260px;min-width:0;font-size:12px}
+}
+@media(forced-colors:active){
+  .design-0205 .home-actions a.hero-button{border:1px solid ButtonText;background:ButtonFace;color:ButtonText;box-shadow:none}
+}
+
+.hero-specialties>span{display:inline-block;white-space:nowrap}

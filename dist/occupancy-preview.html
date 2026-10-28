@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f2eb"><meta name="description" content="An Avanath Capital Management occupancy analytics case study by Ting-Yu Chang."><title>Avanath Case Study — Ting-Yu Chang</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f2eb'/%3E%3Cpath d='M12 13h20c14 0 20 8 20 19S46 51 32 51H12V13zm11 10v18h9c7 0 9-4 9-9s-2-9-9-9h-9z' fill='%23111111'/%3E%3C/svg%3E"><link rel="stylesheet" href="site.css?v=15"><link rel="stylesheet" href="case-study.css?v=1"><link rel="stylesheet" href="tool-icons.css?v=1"></head><body class="case-study"><header class="top"><nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Ting-Yu Chang, home"><span class="brand-full">TING-YU CHANG</span><span class="brand-short" aria-hidden="true">TYC</span></a>
+    <div class="nav-island"><button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span></button><div class="links" id="nav-links" inert aria-hidden="true"><a href="index.html">HOME</a><a class="active-nav" aria-current="location" href="work.html">WORK</a><a href="experience.html">EXPERIENCE</a><a href="capabilities.html">CAPABILITIES</a><a href="about.html">ABOUT</a><a href="resume.docx" download>RESUME ↓</a></div></div>
+    <div class="local-clock" aria-label="Local time in Corona, California"><span class="clock-city">LOCAL TIME</span><time id="local-time">--:--</time></div>
+  </nav></header><main id="main-content">
+  <div class="case-head wrap">
+    <div class="preview-kicker"><a class="back-link" href="work.html">← ALL WORK</a><span>AVANATH CAPITAL MANAGEMENT · CLIENT CASE STUDY</span></div>
+    <div class="client-brand"><span>CLIENT PROJECT</span><img src="assets/avanath-preview/avanath-logo.png" alt="Avanath Capital Management" width="250" height="65"></div>
+    <h1>Understanding what<br>moves occupancy.</h1>
+    <p class="case-deck">Working with Avanath Capital Management through UCI’s MSBA program, I explored changes in affordable-housing occupancy and how the findings could inform leasing and marketing decisions.</p>
+    <div class="case-meta"><span>UCI MSBA CLIENT PROJECT · JAN — JUN 2025</span><span>OCCUPANCY ANALYSIS / PREDICTIVE MODELING</span></div>
+  </div>
+  <div class="wrap">
+    <div class="project-overview">
+    <dl class="project-facts" aria-label="Project at a glance">
+      <div><dt>records brought together</dt><dd>7,000+</dd></div>
+      <div><dt>internal and external sources</dt><dd>6</dd></div>
+      <div><dt>monthly data coverage</dt><dd>2016–2024</dd></div>
+      <div><dt>models compared</dt><dd>4</dd></div>
+    </dl>
+    <div class="project-tools"><div class="tools-intro"><h2>Tools used</h2><p>From data preparation to client reporting.</p></div><ul class="tool-list"><li><img src="assets/tools/alteryx.png" alt="" width="256" height="256"><div><strong>Alteryx</strong><span>Data preparation</span></div></li><li><img src="assets/tools/python.png" alt="" width="256" height="256"><div><strong>Python</strong><span>Analysis & modeling</span></div></li><li><img src="assets/tools/tableau.png" alt="" width="256" height="256"><div><strong>Tableau</strong><span>Visual exploration</span></div></li><li><img src="assets/tools/power-bi.png" alt="" width="256" height="256"><div><strong>Power BI</strong><span>Dashboard reporting</span></div></li></ul></div></div>
+    <p class="role-note"><strong>My role — Student Data Analyst.</strong> I contributed across all four questions, from cleaning data in Alteryx and building models in Python to visualizing findings and discussing them with the client. The results below reflect our team’s work.</p>
+    <p class="project-context">Occupancy measures the share of available units that are occupied. We combined property history with real estate market data, unemployment indicators, and area median income to examine both portfolio-wide patterns and individual properties.</p>
+    <nav class="question-nav" aria-label="Explore the four business questions">
+      <a href="#vacancy"><span>QUESTION 1</span>When vacancies rise</a>
+      <a href="#prediction"><span>QUESTION 2</span>Predicting occupancy</a>
+      <a href="#factors"><span>QUESTION 3</span>What matters locally</a>
+      <a href="#decisions"><span>QUESTION 4</span>Putting insights to work</a>
+    </nav>
+    <section class="question-section" id="vacancy" aria-labelledby="vacancy-title">
+      <div class="question-heading"><div class="question-label">Question 1</div><h2 id="vacancy-title">When do vacancies rise,<br>and how could teams respond?</h2></div>
+      <div class="question-body">
+        <p class="lead-answer">Looking beyond the occupancy rate helped us identify conditions worth watching.</p>
+        <p>I compared nine years of monthly occupancy history with unemployment and mortgage rates. Some occupancy declines appeared alongside, or after, changes in those indicators. The charts gave us a starting point for investigating risk, although they did not establish what caused the declines.</p>
+        <p>Our recommendation was to use changes in external conditions as a prompt for a closer property review. That could help leasing teams investigate a problem earlier, before deciding whether a campaign or another operational response was appropriate.</p>
+<figure class="slide-frame"><button class="slide-open" type="button" aria-label="Enlarge time-series method excerpt"><img src="assets/avanath-preview/time-series-method.png" width="890" height="526" loading="lazy" alt="Slide 11 excerpt: compare occupancy trends with external indicators using time-series charts."></button><figcaption><span>Slide 11 · time-series approach. The excerpt shows the method; underlying client occupancy charts are excluded.</span><button class="slide-open slide-text-open" type="button">Enlarge excerpt</button><button class="slide-close" type="button" aria-label="Close enlarged excerpt">Close ✕</button></figcaption></figure>
+        <ul class="signal-list">
+          <li><h3>Look for changes</h3><p>Compare monthly occupancy patterns with market and economic indicators.</p></li>
+          <li><h3>Check local context</h3><p>Ask whether leasing activity or property conditions help explain the change.</p></li>
+          <li><h3>Decide on a response</h3><p>Use the review to guide outreach, leasing, or further investigation.</p></li>
+        </ul>
+        <p class="evidence-note">Based on the time-series analysis in presentation slides 11–13. The relationships were exploratory and were not statistically tested.</p>
+      </div>
+    </section>
+    <section class="question-section" id="prediction" aria-labelledby="prediction-title">
+      <div class="question-heading"><div class="question-label">Question 2</div><h2 id="prediction-title">How well could we<br>predict occupancy?</h2></div>
+      <div class="question-body">
+        <p class="lead-answer">XGBoost performed best in our reported comparison, with an R² of 0.9707 and an RMSE of 2.15 percentage points.</p>
+        <p>I worked on predictive modeling using occupancy history and selected market and economic variables. We compared four approaches: linear regression, a generalized additive model (GAM), random forest, and XGBoost. XGBoost had the highest model fit and the lowest RMSE in the original, untransformed comparison.</p>
+        <figure class="slide-frame">
+          <button class="slide-open" type="button" aria-label="Enlarge model comparison excerpt"><img src="assets/avanath-preview/model-comparison.png" width="1845" height="729" loading="lazy" alt="Original slide charts comparing R squared and RMSE for four models. Exact values and corrected units are given in the table below."></button>
+          <figcaption><span>From the client presentation · slide 16. The slide expresses R² as a percentage; the table below uses its standard decimal form and states RMSE in percentage points.</span><button class="slide-open slide-text-open" type="button">Enlarge excerpt</button><button class="slide-close" type="button" aria-label="Close enlarged excerpt">Close ✕</button></figcaption>
+        </figure>
+        <div class="result-table-wrap"><table class="result-table">
+          <caption>Reported results · original models, without logit transformation</caption>
+          <thead><tr><th scope="col">Model</th><th scope="col">R²</th><th scope="col">RMSE<br>(percentage points)</th></tr></thead>
+          <tbody><tr class="best"><th scope="row">XGBoost</th><td>0.9707</td><td>2.15</td></tr><tr><th scope="row">Random forest</th><td>0.9675</td><td>2.27</td></tr><tr><th scope="row">GAM</th><td>0.9586</td><td>2.55</td></tr><tr><th scope="row">Linear regression</th><td>0.9530</td><td>2.72</td></tr></tbody>
+        </table></div>
+        <p>These results gave us a basis for discussing how forecasts might support planning and help teams spot properties that need attention.</p>
+        <p class="evidence-note"><strong>How to read the result:</strong> R² measures model fit, so 0.9707 does not mean “97% prediction accuracy.” The deck does not describe a test on a later, unseen period or a comparison with using last month’s occupancy as the forecast. These figures summarize the reported model comparison; they do not establish future forecast accuracy. Source: appendix, slide 38.</p>
+      </div>
+    </section>
+    <section class="question-section" id="factors" aria-labelledby="factors-title">
+      <div class="question-heading"><div class="question-label">Question 3</div><h2 id="factors-title">Which factors matter,<br>and do they vary by property?</h2></div>
+      <div class="question-body">
+        <p class="lead-answer">Last month’s occupancy was the strongest portfolio-level predictor. Individual properties told a more varied story.</p>
+        <p>I worked on the analysis at both levels: looking for patterns across the portfolio, then examining how individual properties behaved. Prior-month occupancy ranked highest across the models. The contribution of other variables, including rents, construction activity, cap rates, and unemployment, varied by model.</p>
+        <figure class="slide-frame">
+          <button class="slide-open" type="button" aria-label="Enlarge modeling approach excerpt"><img src="assets/avanath-preview/modeling-approach.png" width="1950" height="825" loading="lazy" alt="Presentation method: compare models across the portfolio, then analyze individual properties. Limitations include nonlinear relationships and missing qualitative information about management and residents."></button>
+          <figcaption><span>From the client presentation · slide 19. Our approach combined portfolio-wide analysis with individual property models.</span><button class="slide-open slide-text-open" type="button">Enlarge excerpt</button><button class="slide-close" type="button" aria-label="Close enlarged excerpt">Close ✕</button></figcaption>
+        </figure>
+        <p>One comparison made the difference clear. Two property models had reported R² values of 0.94 and 0.43. The same general approach explained much more of the variation in one property’s occupancy than the other’s.</p>
+        <div class="property-comparison" aria-label="Anonymized property model comparison">
+          <div class="property-result"><h3>Property A</h3><div class="r-value"><span>R²</span>0.94</div><p>More of the observed variation was explained.</p></div>
+          <div class="property-result"><h3>Property B</h3><div class="r-value"><span>R²</span>0.43</div><p>Less of the observed variation was explained.</p></div>
+        </div>
+        <p class="evidence-note">Adapted from slide 23. Two anonymized examples; identifying property details are omitted.</p>
+        <p>That finding shaped our recommendation to look at each property’s context before choosing an intervention. A lower R² can also reflect limited variation in occupancy; it does not, on its own, mean that absolute prediction errors are large.</p>
+      </div>
+    </section>
+    <section class="question-section" id="decisions" aria-labelledby="decisions-title">
+      <div class="question-heading"><div class="question-label">Question 4</div><h2 id="decisions-title">How could the findings guide<br>pricing and marketing?</h2></div>
+      <div class="question-body">
+        <p class="lead-answer">We turned the analysis into four recommendations for forecasting, monitoring, and deciding where to focus effort.</p>
+        <p>I helped connect the findings to questions the client could act on: which properties deserved a closer look, what might explain a change, and whether a leasing or marketing response made sense.</p>
+<figure class="slide-frame"><button class="slide-open" type="button" aria-label="Enlarge recommendations excerpt"><img src="assets/avanath-preview/recommendation-panels.png" width="1352" height="1134" loading="lazy" alt="Four original recommendation panels: portfolio forecasting, dynamic leasing, risk monitoring, and segment-based intervention."></button><figcaption><span>Slide 26 · original recommendation panels, regrouped with the client dashboard removed. The 1–2% alert threshold was a proposal, not a deployed rule or measured result.</span><button class="slide-open slide-text-open" type="button">Enlarge excerpt</button><button class="slide-close" type="button" aria-label="Close enlarged excerpt">Close ✕</button></figcaption></figure>
+        <div class="recommendations">
+          <div class="recommendation"><h3>Support portfolio planning</h3><p>Bring occupancy forecasts into revenue and cash-flow discussions so teams can consider potential changes earlier.</p></div>
+          <div class="recommendation"><h3>Flag properties for review</h3><p>Monitor forecasted declines and external indicators to help teams decide where to investigate.</p></div>
+          <div class="recommendation"><h3>Tailor leasing and marketing</h3><p>Review campaigns and pricing in the context of the property and its local market, using the analysis as one input.</p></div>
+          <div class="recommendation"><h3>Match the response to the property</h3><p>Use property-specific findings alongside the team’s operational knowledge to choose an appropriate next step.</p></div>
+        </div>
+        <p class="evidence-note">Adapted from slide 26. Recommendations were presented to the client. Their impact after implementation was not measured in this project.</p>
+        <div class="case-reflection"><p>This project helped me connect model results to a business conversation: what the analysis shows, where it needs more context, and what a team could reasonably do next.</p></div>
+      </div>
+    </section>
+    <div class="case-next"><a href="work.html">← ALL WORK</a><a href="reporting.html">PRO-RACING CASE STUDY ↗</a></div>
+  </div>
+</main><dialog class="slide-dialog" aria-label="Enlarged presentation excerpt"></dialog>
+<footer><div class="wrap"><div class="label">LET'S CONNECT</div><div class="footer-title">Have a question?</div><div class="footer-links"><a href="https://www.linkedin.com/in/ting-yu-chang-/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="resume.docx" download>DOWNLOAD RESUME ↓</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> TING-YU CHANG</span><span>BUSINESS & DATA ANALYST · CALIFORNIA</span></div></div></footer><script src="site.js?v=1"></script><script src="evidence-viewer.js?v=1"></script></body></html>

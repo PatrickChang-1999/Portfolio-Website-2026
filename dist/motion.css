@@ -1,0 +1,21 @@
+/* Shared motion enhancement. Layout, typography and resting surfaces remain page-owned. */
+.motion-enabled{--motion-ease:cubic-bezier(.22,1,.36,1)}
+.motion-enabled .nav-island,.motion-enabled .links,.motion-enabled .nav-island.open .links{transition-duration:220ms;transition-delay:0s}
+.motion-enabled .menu-icon i{transition-duration:180ms}
+.motion-enabled .home-card{transition:transform 200ms var(--motion-ease),box-shadow 200ms ease}
+.motion-enabled #work .work-item{transition:box-shadow 200ms ease}
+.motion-enabled .cap-table tr{transition:background-color 180ms ease}
+.motion-enabled .cap-table tr:focus-within{background:#e9e3d8}
+.motion-enabled .hero-actions a,.motion-enabled .case-link,.motion-enabled .timeline-card a,.motion-enabled .footer-links a{transition:text-decoration-color 180ms ease,border-color 180ms ease}
+@media(hover:hover) and (pointer:fine){
+ .motion-enabled #work .work-item:hover{box-shadow:0 8px 18px rgba(40,34,23,.10),0 20px 40px rgba(40,34,23,.17)}
+ .motion-enabled .cap-table tr:hover{background:#e9e3d8}
+}
+.motion-enabled #work .work-item:focus-within{box-shadow:0 8px 18px rgba(40,34,23,.10),0 20px 40px rgba(40,34,23,.17)}
+@media(prefers-reduced-motion:reduce){
+ .motion-enabled *,.motion-enabled *:before,.motion-enabled *:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+ .motion-enabled .home-card:hover{transform:none}
+}
+@media print{
+ .motion-enabled *{animation:none!important;transform:none!important;opacity:1!important}
+}

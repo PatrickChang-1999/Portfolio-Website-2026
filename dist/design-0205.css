@@ -1,0 +1,149 @@
+/* 0205 — corner waves + grained ivory stationery. Scoped to the six main pages. */
+.design-0205{
+  --paper:#f3efe7;--ink:#302e28;--muted:#615d55;--rule:#d3cbbb;--panel:#e9e2d5;
+  --0205-grain:url("assets/0205/paper-grain.svg");
+  --0205-waves:url("assets/0205/corner-waves.svg");
+  --0205-shadow:0 10px 26px rgba(65,51,30,.08),0 2px 4px rgba(65,51,30,.04),inset 0 0 0 1px rgba(255,255,255,.8);
+  background-color:var(--paper);
+  background-image:none;
+}
+/* One restrained finish for navigation and footer components. */
+.design-0205 .top{background:rgba(246,242,234,.96);border-color:#d9d0c1}
+.design-0205 .local-clock{border-color:#b9ae9a;background-color:#f9f6ee;background-image:var(--0205-grain);box-shadow:inset 0 0 0 2px #fffcf5,0 2px 6px #5947270a}
+.design-0205 .nav-island.open{background-color:#f6f1e7;background-image:var(--0205-grain);border-color:#c7bca9;box-shadow:var(--0205-shadow)}
+.design-0205 .links a:hover,.design-0205 .links a:focus-visible{background:#e8e1d3}
+.design-0205 .links a.active-nav{background:#e4dccd}
+.design-0205 .links a:last-child{border-color:#b9ad96;box-shadow:inset 0 0 0 2px #fff9ef}
+.design-0205 footer{background-color:#eae3d7;background-image:var(--0205-grain),var(--0205-waves);background-size:180px 180px,100% 100%;background-repeat:repeat,no-repeat;border-top:1px solid #d2c7b6}
+.design-0205 .footer-title{text-shadow:0 1px 0 #fffdf6}
+.design-0205 .footer-bottom{border-color:#bfb29c}
+.design-0205 .hero,.design-0205 .page-intro{
+  position:relative;isolation:isolate;
+  width:calc(100% - clamp(32px,6vw,96px));max-width:1352px;
+  margin:36px auto 46px;
+  padding:clamp(32px,4.3vw,66px);
+  border:1px solid #fffdf6;border-radius:20px;
+  background-color:#faf6ec;
+  background-image:var(--0205-grain),var(--0205-waves);
+  background-size:180px 180px,100% 100%;background-repeat:repeat,no-repeat;
+  box-shadow:0 20px 40px -19px rgba(73,53,28,.34),0 3px 6px rgba(73,53,28,.12),inset 0 0 0 1px #e4dac9;
+}
+.design-0205 .hero:after,.design-0205 .page-intro:after{
+  content:"";position:absolute;inset:10px;border:1px solid #cfc3af;border-radius:12px;
+  box-shadow:0 1px 0 #fffdf7,inset 0 1px 0 #fffdf7;pointer-events:none;z-index:-1;
+}
+.design-0205 .hero{
+  min-height:620px;justify-content:space-between;padding-top:60px;padding-bottom:34px;
+}
+.design-0205 .hero>div:first-child{flex:none;justify-content:flex-start;padding-top:38px}
+.design-0205 .hero .eyebrow{font-size:clamp(10px,1vw,13px);letter-spacing:.15em}
+.design-0205 .hero h1{
+  font-size:clamp(40px,7.7vw,116px);font-weight:650;letter-spacing:-.055em;
+  line-height:1.08;margin:38px auto 42px;
+}
+.design-0205 .hero h1,.design-0205 .page-intro h1{
+  color:#37332d;
+  text-shadow:-.6px -1px .6px #211b1466,1px 1.5px .5px #ffffff,2px 2px 1px #fffdf466;
+}
+.design-0205 .hero-body{gap:28px}
+.design-0205 .hero-intro{max-width:950px;font-size:clamp(18px,1.7vw,24px);line-height:1.5;letter-spacing:-.015em}
+.design-0205 .hero-actions{font-size:14px;gap:18px 38px}
+.design-0205 .hero-footer{margin-top:82px;border-color:#877d6c;font-size:11px;letter-spacing:.09em}
+.design-0205 .page-intro{min-height:230px;justify-content:center;padding-top:44px;padding-bottom:44px}
+.design-0205 .page-intro h1{font-size:clamp(46px,6vw,84px);font-weight:550;letter-spacing:-.05em;line-height:1.12;margin:0;overflow-wrap:anywhere}
+.design-0205 .page-intro p{font-size:clamp(18px,1.6vw,23px);margin:18px 0 0;line-height:1.5;max-width:770px;color:var(--muted)}
+.design-0205 .experience-intro{gap:38px}
+.design-0205 .experience-intro h1{margin-top:15px}
+.design-0205 .experience-intro p{margin:0}
+/* Paper finishes on all existing content surfaces. No extra sections. */
+.design-0205 .home-card,
+.design-0205 #work .work-item,
+.design-0205 .career-entry,
+.design-0205 .career-flow,
+.design-0205 .workflow-steps>li,
+.design-0205 .timeline-card,
+.design-0205 .about-grid>.lead,
+.design-0205 .education{
+  border:1px solid #d1c5b1;border-radius:16px;background-color:#faf6ec;
+  background-image:var(--0205-grain),var(--0205-waves);
+  background-repeat:repeat,no-repeat;background-size:180px 180px,100% 100%;background-position:left top;
+  background-clip:padding-box;box-shadow:var(--0205-shadow);
+}
+.design-0205 .home-work{border-top:1px solid #d2c7b6;padding-top:62px}
+.design-0205 .home-work-head{border-color:#c2b59e}
+.design-0205 .home-card{padding:clamp(26px,3.2vw,44px);background-size:180px 180px,100% 100%;background-position:left top}
+.design-0205 .home-card h3{color:var(--ink);text-shadow:0 1px 0 #fffdf6}
+.design-0205 .home-card .company-profile{border-color:#d5cab7}
+.design-0205 #work .work-item{background-image:var(--0205-grain);background-size:180px 180px}
+.design-0205 #work .work-tool-panel,.design-0205 .company-panel{
+  background-color:#eae2d4;background-image:var(--0205-grain),var(--0205-waves);
+  background-size:180px 180px,100% 100%;background-repeat:repeat,no-repeat;border-color:#cfc1aa;
+}
+.design-0205 .company-contour{display:none}
+.design-0205 .career-entry{background-image:var(--0205-grain);background-size:180px 180px}
+.design-0205 .career-flow{background-color:#f0e9dc;background-image:var(--0205-grain);background-size:180px 180px}
+.design-0205 .experience-evidence{background-color:#f0e9dc;background-image:var(--0205-grain),var(--0205-waves);background-size:180px 180px,100% 100%;background-repeat:repeat,no-repeat;border-color:#d6c9b3;box-shadow:inset 0 0 0 1px #fffaf0}
+.design-0205 .current-role{background:#e9eadf;border-color:#c8cbb6;box-shadow:inset 0 1px 0 #ffffffb3}
+.design-0205 .workflow-steps>li{background-color:#ece4d6;background-size:180px 180px,100% 100%}
+.design-0205 .workflow-icon{background-color:#faf6ec;background-image:var(--0205-grain);color:#62664f;box-shadow:0 3px 7px #5543280a,inset 0 0 0 1px #d6c9b3,inset 0 0 0 3px #fffaf0}
+.design-0205 .cap-table{background-color:#faf6ec;background-image:var(--0205-grain);box-shadow:var(--0205-shadow);border-radius:14px;border-collapse:separate;border-spacing:0;overflow:hidden}
+.design-0205 .cap-table th,.design-0205 .cap-table td{border:0;border-right:1px solid #d6c9b5;border-bottom:1px solid #d6c9b5}
+.design-0205 .cap-table th{background:#e9e1d466;border-left:1px solid #d6c9b5}
+.design-0205 .cap-table tr:first-child>*{border-top:1px solid #d6c9b5}
+.design-0205 .cap-table tr:first-child>th{border-top-left-radius:14px}
+.design-0205 .cap-table tr:first-child>td:last-child{border-top-right-radius:14px}
+.design-0205 .cap-table tr:last-child>th{border-bottom-left-radius:14px}
+.design-0205 .cap-table tr:last-child>td:last-child{border-bottom-right-radius:14px}
+.design-0205 .timeline-section{background:transparent}
+.design-0205 .timeline-card{padding:26px 28px 38px;background-size:180px 180px,100% 100%;background-position:left top}
+.design-0205 .timeline-item{padding-bottom:28px}
+.design-0205 .timeline:before{background:#b7aa92}
+.design-0205 .timeline-item:before{background:#7c8168;border-color:var(--paper)}
+.design-0205 .about-grid{gap:clamp(30px,4vw,62px);align-items:start}
+.design-0205 .about-grid>.lead{padding:clamp(28px,3.5vw,48px);padding-bottom:100px;color:var(--ink);text-shadow:0 1px 0 #fffdf5;line-height:1.3}
+.design-0205 .education{padding:22px 26px;background-size:180px 180px,100% 100%;font-size:14px}
+.design-0205 .education div{border-color:#d7cab5}
+.design-0205 .education div:last-child{border-bottom:0}
+.design-0205 .page-section{border-color:#d6ccbc}
+.design-0205 a:focus-visible,.design-0205 button:focus-visible{outline:2px solid #655e48;outline-offset:5px}
+@media(hover:hover) and (pointer:fine){
+  .design-0205 .home-card:hover,.design-0205 #work .work-item:hover{box-shadow:0 14px 30px #41331e1c,0 3px 6px #41331e0a,inset 0 0 0 1px #ffffffcc}
+}
+@media(max-width:850px){
+  .design-0205 .hero{min-height:540px;padding:46px 32px 28px}
+  .design-0205 .hero>div:first-child{padding-top:26px}
+  .design-0205 .hero-footer{margin-top:62px}
+  .design-0205 .page-intro{padding:36px;min-height:220px}
+}
+@media(max-width:680px){
+  .design-0205 .hero,.design-0205 .page-intro{width:calc(100% - 32px);margin:22px auto 32px;border-radius:16px;padding-left:24px;padding-right:24px}
+  .design-0205 .hero:after,.design-0205 .page-intro:after{inset:7px;border-radius:10px}
+  .design-0205 .hero{min-height:560px;padding-top:36px;padding-bottom:26px}
+  .design-0205 .hero>div:first-child{padding-top:24px}
+  .design-0205 .hero h1{white-space:normal;font-size:clamp(37px,7.3vw,52px);line-height:1.12;margin:30px auto}
+  .design-0205 .hero .eyebrow{font-size:9px;letter-spacing:.1em;max-width:245px;line-height:1.8}
+  .design-0205 .hero-intro{font-size:17px;line-height:1.6;max-width:450px}
+  .design-0205 .hero-actions{font-size:12px;gap:15px 22px}
+  .design-0205 .hero-footer{font-size:9px;letter-spacing:.065em;line-height:1.7;margin-top:56px;flex-direction:column;gap:8px}
+  .design-0205 .page-intro{min-height:190px;padding-top:36px;padding-bottom:36px}
+  .design-0205 .page-intro h1{font-size:clamp(38px,9.4vw,60px)}
+  .design-0205 .page-intro p{font-size:17px;margin-top:14px}
+  .design-0205 .experience-intro{gap:22px}
+  .design-0205 .experience-intro p{margin-top:0}
+  .design-0205 .home-work{padding-top:42px}
+  .design-0205 .workflow-steps>li{background-size:180px 180px,100% 100%}
+  .design-0205 .cap-table{background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+  .design-0205 .cap-table tr{border:1px solid #d1c5b1;border-radius:14px;padding:24px;margin-bottom:18px;background-color:#faf6ec;background-image:var(--0205-grain),var(--0205-waves);background-size:180px 180px,100% 100%;box-shadow:var(--0205-shadow)}
+  .design-0205 .cap-table th,.design-0205 .cap-table td,.design-0205 .cap-table tr:first-child>*{border:0;background:transparent}
+  .design-0205 .cap-table .cap-proof{border-top:1px solid #d6c9b5}
+  .design-0205 .timeline-item.left .timeline-card,.design-0205 .timeline-item.right .timeline-card{padding:22px 24px 32px}
+  .design-0205 .about-grid>.lead{padding:28px 28px 80px}
+  .design-0205 .education{padding:18px 22px}
+}
+@media(prefers-contrast:more){
+  .design-0205{--ink:#171511;--muted:#3d3931}
+  .design-0205 .hero h1,.design-0205 .page-intro h1{text-shadow:none;color:#171511}
+}
+@media print{
+  .design-0205 .hero,.design-0205 .page-intro{box-shadow:none;background-image:none}
+}
