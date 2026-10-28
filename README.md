@@ -38,11 +38,20 @@ The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixel
 
 ## Update your résumé
 
-Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF still needs to be supplied before these downloads can work. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
+Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF is now present and was verified to open correctly. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
 
 ## Hosting
 
-Creating this repository stores the source; it does not enable website hosting. The project can be hosted by any static host using `dist/` as the publish directory. For GitHub Pages, use a GitHub Actions workflow that uploads `dist/`; the Pages workflow and hosting settings are the next setup step. A project-site subpath is supported by the relative asset and page URLs.
+The GitHub Pages workflow is `.github/workflows/deploy-pages.yml`. It uploads only `dist/` and deploys after a change to `dist/` is pushed to `main`. There is no build step. Relative asset and page URLs support the project-site subpath.
+
+One-time setup:
+
+1. Open the repository's **Settings → Pages**.
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow**, select `main`, and run it. If an earlier run failed while Pages was disabled, rerun it after selecting the source.
+4. Open the URL shown by the successful deployment and check the résumé download over HTTPS.
+
+The workflow cannot enable the repository's Pages setting by itself. The project can also be hosted by another static host using `dist/` as the publish directory.
 
 The existing ChatGPT-hosted Site remains a separate deployment. GitHub commits do not automatically update that Site.
 
