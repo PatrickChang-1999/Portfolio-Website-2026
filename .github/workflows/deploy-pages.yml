@@ -1,11 +1,7 @@
 name: Deploy portfolio to GitHub Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'dist/**'
-      - '.github/workflows/deploy-pages.yml'
+  # Publishing is started manually in GitHub Actions.
   workflow_dispatch:
 
 permissions:
