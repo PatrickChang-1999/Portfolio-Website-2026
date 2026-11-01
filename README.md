@@ -40,9 +40,16 @@ The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixel
 
 Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF is now present and was verified to open correctly. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
 
-## Update the tab icon
+## Personal logo and tab icon
 
-The favicon uses the approved 04C-1 TYC monogram in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images of the same design. All pages reference these shared files. Keep both formats in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files.
+The current personal logo is the approved **04C-1B hollow-circle C**, surrounding the solid interlocked T and Y. The editable transparent vector is `dist/assets/brand/tyc-04c1b.svg`. Matching 2048 × 2048 PNG files are available in the same folder:
+
+- `TYC-04C-1B-transparent.png` — transparent background for placement over existing surfaces.
+- `TYC-04C-1B-ivory.png` — ivory background for standalone use.
+
+The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All eight HTML files reference these shared files with version `v=3`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest hollow circles naturally lose detail at 16 pixels.
+
+Header, footer and home-card logo placements are design drafts only; the existing page layout remains unchanged. Company, school and software logos retain their respective identities.
 
 ## Hosting
 

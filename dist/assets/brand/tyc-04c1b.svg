@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 704">
+  <title>Ting-Yu Chang — 04C-1B hollow-circle monogram</title>
+  <g fill="none" stroke="#111111">
+    <circle cx="613" cy="128.5" r="4.305" stroke-width="1.890"/>
+    <circle cx="599" cy="117" r="5.330" stroke-width="2.340"/>
+    <circle cx="582.5" cy="105" r="5.535" stroke-width="2.430"/>
+    <circle cx="562" cy="92.5" r="5.945" stroke-width="2.610"/>
+    <circle cx="540.5" cy="81.5" r="6.560" stroke-width="2.880"/>
+    <circle cx="516" cy="71.5" r="7.585" stroke-width="3.330"/>
+    <circle cx="489" cy="63.5" r="7.995" stroke-width="3.510"/>
+    <circle cx="459" cy="57.5" r="9.225" stroke-width="4.050"/>
+    <circle cx="426" cy="55.5" r="10.045" stroke-width="4.410"/>
+    <circle cx="390" cy="57" r="11.070" stroke-width="4.860"/>
+    <circle cx="352" cy="63" r="12.710" stroke-width="5.580"/>
+    <circle cx="312.5" cy="75" r="13.735" stroke-width="6.030"/>
+    <circle cx="273.5" cy="93.5" r="14.760" stroke-width="6.480"/>
+    <circle cx="235" cy="118.5" r="15.785" stroke-width="6.930"/>
+    <circle cx="200" cy="151" r="16.810" stroke-width="7.380"/>
+    <circle cx="170.5" cy="189.5" r="18.040" stroke-width="7.920"/>
+    <circle cx="146" cy="237" r="19.270" stroke-width="8.460"/>
+    <circle cx="130" cy="292" r="20.090" stroke-width="8.820"/>
+    <circle cx="126" cy="350" r="20.910" stroke-width="9.180"/>
+    <circle cx="134.5" cy="410.5" r="21.320" stroke-width="9.360"/>
+    <circle cx="156.5" cy="467" r="21.935" stroke-width="9.630"/>
+    <circle cx="190.5" cy="516.5" r="22.140" stroke-width="9.720"/>
+    <circle cx="234.5" cy="557.5" r="22.140" stroke-width="9.720"/>
+    <circle cx="287" cy="588" r="22.550" stroke-width="9.900"/>
+    <circle cx="345.5" cy="607" r="22.755" stroke-width="9.990"/>
+    <circle cx="409" cy="611" r="23.370" stroke-width="10.260"/>
+    <circle cx="475" cy="602" r="24.190" stroke-width="10.620"/>
+    <circle cx="538.5" cy="574.5" r="25.420" stroke-width="11.160"/>
+    <circle cx="596" cy="531.5" r="26.855" stroke-width="11.790"/>
+  </g>
+  <g fill="#111111">
+    <path d="M258 198H538V256H430V331L392 383L358 332V256H258Z"/>
+    <path d="M233 296H309L392 414L478 296H561L433 456V546H354V456Z"/>
+  </g>
+</svg>
