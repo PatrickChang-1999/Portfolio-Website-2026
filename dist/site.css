@@ -161,3 +161,7 @@ footer{padding:48px 0 22px}
 .home-card .company-profile{margin-bottom:0}
 .home-card>p{margin-top:0;margin-bottom:28px}
 .home-card>.case-link{align-self:flex-start;margin-top:auto}
+
+/* Small decorative signature, confined to the footer corner. */
+footer.footer-branded .footer-bottom{position:relative;min-height:28px;padding-inline-end:44px}
+footer.footer-branded .footer-corner-logo{position:absolute;inset-inline-end:0;bottom:0;display:block;width:28px;height:28px;object-fit:contain;opacity:.62;pointer-events:none;user-select:none}

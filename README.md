@@ -49,7 +49,7 @@ The current personal logo is the approved **04C-1B solid-dot C**, surrounding th
 
 The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All eight HTML files reference these shared files with version `v=4`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest dots naturally lose detail at 16 pixels.
 
-Small corner placements on existing title cards, work cards and the footer are design drafts only; the existing page layout remains unchanged. Company, school and software logos retain their respective identities.
+A small decorative 04C-1B mark appears only in the lower-right footer corner on all seven content pages. It uses `dist/assets/brand/tyc-04c1b-footer.png`, an 84 × 84 transparent export displayed at 28 × 28 pixels. It is not a link and is hidden from assistive technology because the nearby text already identifies the portfolio owner. Keep the header, title cards and work cards free of additional personal logos. Company, school and software logos retain their respective identities.
 
 ## Hosting
 

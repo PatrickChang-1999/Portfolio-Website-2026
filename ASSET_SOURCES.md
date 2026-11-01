@@ -12,6 +12,7 @@
 
 - `dist/assets/brand/tyc-04c1b.svg`: vector reconstruction of the user-selected 04C-1B “Graduated dotted C” image-generation concept. Twenty-nine separate solid filled circles form the C, increasing in size from the upper-right end around the curve to the lower-right end. Circle positions and outer sizes were measured from the original solid-dot reference; the existing interlocked T and Y vector paths are preserved. Color: charcoal `#111111`.
 - `dist/assets/brand/TYC-04C-1B-transparent.png` and `TYC-04C-1B-ivory.png`: 2048 × 2048 raster exports of that vector, with transparency or an ivory `#f5f2eb` background respectively.
+- `dist/assets/brand/tyc-04c1b-footer.png`: 84 × 84 transparent export of the same solid-dot vector, displayed at 28 × 28 pixels as a small decorative footer corner mark.
 - `dist/favicon.svg`: the same 04C-1B geometry on ivory, replacing the earlier solid-C 04C-1 favicon.
 - `dist/favicon.ico`: 16, 32, and 48 pixel raster exports of the same SVG for browser compatibility.
 
