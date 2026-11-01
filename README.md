@@ -42,14 +42,14 @@ Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resum
 
 ## Personal logo and tab icon
 
-The current personal logo is the approved **04C-1B hollow-circle C**, surrounding the solid interlocked T and Y. The editable transparent vector is `dist/assets/brand/tyc-04c1b.svg`. Matching 2048 × 2048 PNG files are available in the same folder:
+The current personal logo is the approved **04C-1B solid-dot C**, surrounding the solid interlocked T and Y. The circles are filled, increasing gradually in size around the open C. The editable transparent vector is `dist/assets/brand/tyc-04c1b.svg`. Matching 2048 × 2048 PNG files are available in the same folder:
 
 - `TYC-04C-1B-transparent.png` — transparent background for placement over existing surfaces.
 - `TYC-04C-1B-ivory.png` — ivory background for standalone use.
 
-The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All eight HTML files reference these shared files with version `v=3`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest hollow circles naturally lose detail at 16 pixels.
+The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All eight HTML files reference these shared files with version `v=4`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest dots naturally lose detail at 16 pixels.
 
-Header, footer and home-card logo placements are design drafts only; the existing page layout remains unchanged. Company, school and software logos retain their respective identities.
+Small corner placements on existing title cards, work cards and the footer are design drafts only; the existing page layout remains unchanged. Company, school and software logos retain their respective identities.
 
 ## Hosting
 
