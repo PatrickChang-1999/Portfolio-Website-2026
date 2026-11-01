@@ -40,6 +40,10 @@ The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixel
 
 Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF is now present and was verified to open correctly. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
 
+## Update the tab icon
+
+The favicon uses the approved 04C-1 TYC monogram in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images of the same design. All pages reference these shared files. Keep both formats in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files.
+
 ## Hosting
 
 The GitHub Pages workflow is `.github/workflows/deploy-pages.yml`. Publishing is **manual**: pushing code, a headshot, or a résumé to `main` saves the changes in GitHub but does not update the live website. The workflow uploads only `dist/`. There is no build step. Relative asset and page URLs support the project-site subpath.

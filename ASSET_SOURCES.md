@@ -8,6 +8,11 @@
 - Pro-Racing logo: transparent PNG derived from the user-provided `Pro Racing X -logo.jpg`, used consistently across the site.
 - Homepage Avanath logo: reused existing presentation-derived asset.
 
+## Personal favicon — 31 October 2026
+
+- `dist/favicon.svg`: original vector reconstruction of the user-approved 04C-1 “Deep fit” TYC monogram concept, developed with image generation. The open C surrounds the interlocked T and Y; colors are charcoal `#111111` and ivory `#f5f2eb`.
+- `dist/favicon.ico`: 16, 32, and 48 pixel raster exports of the same SVG for browser compatibility.
+
 
 ## Pro-Racing completed demonstration — 21 October 2026
 
