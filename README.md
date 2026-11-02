@@ -9,14 +9,18 @@ This is a static HTML, CSS, and JavaScript site. There is no package installatio
 | Page | File |
 | --- | --- |
 | Home | `dist/index.html` |
-| Work | `dist/work.html` |
-| Experience | `dist/experience.html` |
-| Capabilities | `dist/capabilities.html` |
-| About | `dist/about.html` |
-| Pro-Racing case study | `dist/reporting.html` |
-| Avanath case study | `dist/occupancy-preview.html` |
+| Work | `dist/work/index.html` |
+| Experience | `dist/experience/index.html` |
+| Capabilities | `dist/capabilities/index.html` |
+| About | `dist/about/index.html` |
+| Pro-Racing case study | `dist/reporting/index.html` |
+| Avanath case study | `dist/occupancy-preview/index.html` |
 
-`dist/occupancy.html` preserves an older URL with a redirect. Main navigation contains five pages; the two case studies are opened from the portfolio.
+Main navigation contains five pages; the two case studies are opened from the portfolio. Page URLs are `/`, `/work/`, `/experience/`, `/capabilities/`, `/about/`, `/reporting/`, and `/occupancy-preview/`. Each directory serves its own `index.html`, so visitors do not need a filename in the address.
+
+The original root-level `.html` addresses, including `dist/occupancy.html`, remain as lightweight redirect pages. `dist/clean-urls.js` forwards old bookmarks directly to the matching clean URL while preserving query strings and section anchors. It also redirects explicitly entered `index.html` addresses to their directory URL. These are browser redirects; GitHub Pages does not provide repository-configured HTTP 301 rules. The redirect pages include a no-JavaScript refresh and a visible fallback link.
+
+All content and redirect pages declare their preferred URL on `https://typchang.com/`. Relative links and assets also work under a project-site subpath. When editing page content, edit its directory’s `index.html`, not the root-level redirect file. Keep the existing stylesheet, script, image, and download paths relative to the page’s depth.
 
 ## Run locally
 
@@ -47,7 +51,7 @@ The current personal logo is the approved **04C-1B solid-dot C**, surrounding th
 - `TYC-04C-1B-transparent.png` — transparent background for placement over existing surfaces.
 - `TYC-04C-1B-ivory.png` — ivory background for standalone use.
 
-The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All eight HTML files reference these shared files with version `v=4`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest dots naturally lose detail at 16 pixels.
+The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All content and redirect HTML files reference these shared files with version `v=4`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest dots naturally lose detail at 16 pixels.
 
 A small decorative 04C-1B mark appears only in the lower-right footer corner on all seven content pages. It uses `dist/assets/brand/tyc-04c1b-footer.png`, an 84 × 84 transparent export displayed at 28 × 28 pixels. It is not a link and is hidden from assistive technology because the nearby text already identifies the portfolio owner. Keep the header, title cards and work cards free of additional personal logos. Company, school and software logos retain their respective identities.
 
