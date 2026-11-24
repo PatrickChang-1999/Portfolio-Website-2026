@@ -1,90 +1,19 @@
 # Ting-Yu Chang — Portfolio
 
-Personal portfolio for Ting-Yu (Patrick) Chang, business and data analyst. The 0205 design combines warm ivory, subtle grain, wave graphics, and recessed title styling.
+I’m Ting-Yu (Patrick) Chang, a Business Analytics graduate from UC Irvine with about a year of experience as a Business Analyst. This is my personal website, where I share my projects, work experience, and background.
 
-## Website files
+**Website:** [typchang.com](https://typchang.com/)
 
-This is a static HTML, CSS, and JavaScript site. There is no package installation or build step. Publish the contents of `dist/` as the website root.
+The website has five main pages:
 
-| Page | File |
-| --- | --- |
-| Home | `dist/index.html` |
-| Work | `dist/work/index.html` |
-| Experience | `dist/experience/index.html` |
-| Capabilities | `dist/capabilities/index.html` |
-| About | `dist/about/index.html` |
-| Pro-Racing case study | `dist/reporting/index.html` |
-| Avanath case study | `dist/occupancy-preview/index.html` |
+- **Home:** A short introduction and links to my projects and résumé.
+- **Work:** My analytics projects, including the questions I explored, the tools I used, and the results.
+- **Experience:** My current Business Analyst role, previous marketing experience, and graduate client project.
+- **Capabilities:** The tools and methods I’ve used in my work and studies.
+- **About:** A little more about me and my education.
 
-Main navigation contains five pages; the two case studies are opened from the portfolio. Page URLs are `/`, `/work/`, `/experience/`, `/capabilities/`, `/about/`, `/reporting/`, and `/occupancy-preview/`. Each directory serves its own `index.html`, so visitors do not need a filename in the address.
+There are currently two project case studies: a sales forecasting and reporting demonstration built with KNIME and Power BI using synthetic data, and an occupancy analysis project my team worked on for Avanath Capital Management during my master’s program.
 
-The original root-level `.html` addresses, including `dist/occupancy.html`, remain as lightweight redirect pages. `dist/clean-urls.js` forwards old bookmarks directly to the matching clean URL while preserving query strings and section anchors. It also redirects explicitly entered `index.html` addresses to their directory URL. These are browser redirects; GitHub Pages does not provide repository-configured HTTP 301 rules. The redirect pages include a no-JavaScript refresh and a visible fallback link.
+I’ll add more projects as I continue learning and gaining experience.
 
-All content and redirect pages declare their preferred URL on `https://typchang.com/`. Relative links and assets also work under a project-site subpath. When editing page content, edit its directory’s `index.html`, not the root-level redirect file. Keep the existing stylesheet, script, image, and download paths relative to the page’s depth.
-
-## Run locally
-
-With Python 3 installed, run this command from the repository root:
-
-```sh
-python -m http.server 8000 --directory dist
-```
-
-Then open `http://localhost:8000/`.
-
-## Update your headshot
-
-Upload an actual JPEG named `headshot.jpg` to:
-
-`dist/assets/profile/headshot.jpg`
-
-The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixels or larger works well. Commit the image and deploy the updated site. The About page will load it automatically; no HTML edits are required. A missing or invalid image leaves the TYC placeholder visible.
-
-## Update your résumé
-
-Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF is now present and was verified to open correctly. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
-
-## Personal logo and tab icon
-
-The current personal logo is the approved **04C-1B solid-dot C**, surrounding the solid interlocked T and Y. The circles are filled, increasing gradually in size around the open C. The editable transparent vector is `dist/assets/brand/tyc-04c1b.svg`. Matching 2048 × 2048 PNG files are available in the same folder:
-
-- `TYC-04C-1B-transparent.png` — transparent background for placement over existing surfaces.
-- `TYC-04C-1B-ivory.png` — ivory background for standalone use.
-
-The favicon uses the same geometry on an ivory background in `dist/favicon.svg`. `dist/favicon.ico` provides 16, 32, and 48 pixel fallback images. All content and redirect HTML files reference these shared files with version `v=4`. Keep the vector, PNGs and ICO exports in sync, and bump the favicon query-string version in every HTML page after changing the icon so browsers request the updated files. The smallest dots naturally lose detail at 16 pixels.
-
-A small decorative 04C-1B mark appears only in the lower-right footer corner on all seven content pages. It uses `dist/assets/brand/tyc-04c1b-footer.png`, an 84 × 84 transparent export displayed at 28 × 28 pixels. It is not a link and is hidden from assistive technology because the nearby text already identifies the portfolio owner. Keep the header, title cards and work cards free of additional personal logos. Company, school and software logos retain their respective identities.
-
-## Hosting
-
-The GitHub Pages workflow is `.github/workflows/deploy-pages.yml`. Publishing is **manual**: pushing code, a headshot, or a résumé to `main` saves the changes in GitHub but does not update the live website. The workflow uploads only `dist/`. There is no build step. Relative asset and page URLs support the project-site subpath.
-
-One-time setup:
-
-1. Open the repository's [**Settings → Pages**](https://github.com/PatrickChang-1999/Portfolio-Website-2026/settings/pages).
-2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. The workflow already exists, so no template needs to be added. This setup does not require a custom domain.
-
-Publish the website, or publish a later update:
-
-1. Commit and push the intended changes to `main`.
-2. Open [**Actions → Deploy portfolio to GitHub Pages**](https://github.com/PatrickChang-1999/Portfolio-Website-2026/actions/workflows/deploy-pages.yml).
-3. Click **Run workflow**, select branch `main`, then click the **Run workflow** button in the dropdown. This starts the publication of the latest saved files.
-4. Wait for the run to finish successfully, then open the website URL shown by the deployment. Check the About-page headshot and the résumé download over HTTPS.
-
-Start a new run when publishing current files. Rerunning an old failed run uses its older commit. The earlier failed run remains in Actions history; it failed because Pages was disabled.
-
-The workflow cannot enable the repository's Pages setting by itself. The project can also be hosted by another static host using `dist/` as the publish directory.
-
-The existing ChatGPT-hosted Site remains a separate deployment. GitHub commits do not automatically update that Site.
-
-## Maintenance
-
-- Preserve the current layout and 0205 styling unless a redesign is explicitly requested.
-- Keep shared navigation, footer links, terminology, and tool icons consistent across pages.
-- Underlined links that use a bottom border must not gain a second text underline on hover or keyboard focus.
-- Keep the synthetic-data disclosure and the distinction between test R² and recursive four-week WAPE in the Pro-Racing case study.
-- When changing a stylesheet or script, update its query-string version in affected HTML files.
-- Verify desktop and mobile layouts, internal links, the résumé download, and the headshot fallback after relevant edits.
-
-Additional design and content notes are in `docs/`; asset provenance is in `ASSET_SOURCES.md`. The original analytics source workbooks, Power BI project, and client presentation are not part of this website repository.
+For file locations and instructions on updating the site, see the [maintenance notes](docs/website-maintenance.md).
