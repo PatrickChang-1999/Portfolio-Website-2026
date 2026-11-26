@@ -42,7 +42,7 @@ The existing folder contains a short README. A 4:5 crop around 800 × 1000 pixel
 
 ## Update your résumé
 
-Upload your final PDF into `dist/` using the exact filename `Ting-Yu Chang Resume for github.pdf`. Full repository path: `dist/Ting-Yu Chang Resume for github.pdf`. Keep the spaces and capitalization as shown. All 15 résumé links already target this PDF and suggest the same download filename. Commit the upload and deploy the updated site. The PDF is now present and was verified to open correctly. The older `dist/resume.docx` is a legacy draft and is no longer linked by the website.
+Export your Word résumé as `Ting-Yu Chang Resume 2027.pdf`. Upload it to `dist/` on `main`, replacing the existing PDF. Keep the filename exactly as shown so every résumé button downloads the same file. When you’re ready to publish, run the GitHub Pages workflow below.
 
 ## Personal logo and tab icon
 

@@ -27,7 +27,7 @@ jobs:
       - name: Check required files and JavaScript
         run: |
           test -f dist/index.html
-          test -f "dist/Ting-Yu Chang Resume for github.pdf"
+          test -f "dist/Ting-Yu Chang Resume 2027.pdf"
           for script in dist/*.js; do
             node --check "$script"
           done
